@@ -57,7 +57,7 @@
             button3.Name = "button3";
             button3.Size = new Size(200, 75);
             button3.TabIndex = 3;
-            button3.Text = "ALTA LIBRO/LECTOR";
+            button3.Text = "REGISTRO";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 

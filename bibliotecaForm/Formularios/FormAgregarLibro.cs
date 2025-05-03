@@ -122,5 +122,29 @@ namespace bibliotecaForm.Formularios
         {
             this.Close();
         }
+
+        private void btnAltaLector_Click(object sender, EventArgs e)
+        {
+            // input para nombre
+            string nombre = Microsoft.VisualBasic.Interaction.InputBox("Ingrese el nombre del lector:", "Alta de Lector", "");
+            if (string.IsNullOrWhiteSpace(nombre))
+            {
+                MessageBox.Show("Nombre no puede ser nulo");
+                return;
+            }
+
+            // input para dni
+            string dni = Microsoft.VisualBasic.Interaction.InputBox("Ingrese el DNI del lector:", "Alta de Lector", "");
+            if (string.IsNullOrWhiteSpace(dni))
+            {
+                MessageBox.Show("DNI no puede ser nulo");
+                return;
+            }
+
+
+            // alta lector
+            biblioteca.AltaLector(nombre, dni);
+            MessageBox.Show("Lector registrado correctamente.", "Alta exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

@@ -33,6 +33,7 @@
             txtAutor = new TextBox();
             btnAgregar = new Button();
             btnCancelar = new Button();
+            btnAltaLector = new Button();
             SuspendLayout();
             // 
             // txtTitulo
@@ -94,11 +95,22 @@
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Click += btnCancelar_Click;
             // 
+            // btnAltaLector
+            // 
+            btnAltaLector.Location = new Point(533, 340);
+            btnAltaLector.Name = "btnAltaLector";
+            btnAltaLector.Size = new Size(75, 46);
+            btnAltaLector.TabIndex = 9;
+            btnAltaLector.Text = "ALTA LECTOR";
+            btnAltaLector.UseVisualStyleBackColor = true;
+            btnAltaLector.Click += btnAltaLector_Click;
+            // 
             // FormAgregarLibro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnAltaLector);
             Controls.Add(btnCancelar);
             Controls.Add(btnAgregar);
             Controls.Add(txtAutor);
@@ -118,5 +130,6 @@
         private TextBox txtAutor;
         private Button btnAgregar;
         private Button btnCancelar;
+        private Button btnAltaLector;
     }
 }
