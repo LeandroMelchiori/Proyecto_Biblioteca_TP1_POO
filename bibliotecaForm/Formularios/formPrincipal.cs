@@ -14,9 +14,10 @@ namespace bibliotecaForm.Formularios
     public partial class formPrincipal : Form
     {
         private Biblioteca biblioteca = new Biblioteca();
-        public formPrincipal()
+        public formPrincipal(Biblioteca biblioteca)
         {
             InitializeComponent();
+            this.biblioteca = biblioteca;
         }
 
         private void btnListarLibros_Click(object sender, EventArgs e)
@@ -90,21 +91,7 @@ namespace bibliotecaForm.Formularios
 
         private void formPrincipal_Load(object sender, EventArgs e)
         {
-            // Libros precargados
-            biblioteca.AgregarLibro("El Principito", "Saint-Exupéry", "Sudamericana");
-            biblioteca.AgregarLibro("Cien años de soledad", "García Márquez", "Sudamericana");
-            biblioteca.AgregarLibro("Rayuela", "Cortázar", "Cátedra");
-            biblioteca.AgregarLibro("IT", "Stephen King", "Planeta");
-            biblioteca.AgregarLibro("1984", "George Orwell", "Debolsillo");
-            biblioteca.AgregarLibro("Fahrenheit 451", "Ray Bradbury", "Minotauro");
-            biblioteca.AgregarLibro("La sombra del viento", "Carlos Ruiz Zafón", "Planeta");
-
-            // Lectores precargados
-            biblioteca.AltaLector("Ana", "123");
-            biblioteca.AltaLector("Bruno", "456");
-            biblioteca.AltaLector("Rocio", "626");
-            biblioteca.AltaLector("Hernan", "404");
-            biblioteca.AltaLector("Mario", "420");
+            
         }
 
         private void btnVerPrestamos_Click(object sender, EventArgs e)

@@ -20,14 +20,22 @@ namespace bibliotecaForm.Formularios
             // cargamos la biblioteca
             this.biblioteca = biblioteca;
 
-            // Carga las listas al iniciar formulario
-            listLectores.Items.AddRange(biblioteca.ObtenerLectores().ToArray());
-            listLibros.Items.AddRange(biblioteca.ObtenerLibros().ToArray());
         }
+
 
         private void FormPrestarLibro_Load(object sender, EventArgs e)
         {
+            listLectores.Items.Clear();
+            foreach (var lector in biblioteca.ObtenerLectores())
+            {
+                listLectores.Items.Add(lector);
+            }
 
+            listLibros.Items.Clear();
+            foreach (var libro in biblioteca.ObtenerLibros())
+            {
+                listLibros.Items.Add(libro);
+            }
         }
 
         private void label4_Click(object sender, EventArgs e)

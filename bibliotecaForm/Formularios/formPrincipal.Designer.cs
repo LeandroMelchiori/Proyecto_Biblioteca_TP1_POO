@@ -33,17 +33,16 @@ namespace bibliotecaForm.Formularios
         {
             btnListarLectores = new Button();
             btnListarLibros = new Button();
-            btnAgregarLibro = new Button();
-            btnPrestarLibro = new Button();
             btnAltaLector = new Button();
             listBox1 = new ListBox();
             lblTipoLista = new Label();
             btnVerPrestamos = new Button();
+            btnPrestarLibro = new Button();
             SuspendLayout();
             // 
             // btnListarLectores
             // 
-            btnListarLectores.Location = new Point(621, 129);
+            btnListarLectores.Location = new Point(619, 107);
             btnListarLectores.Name = "btnListarLectores";
             btnListarLectores.Size = new Size(75, 46);
             btnListarLectores.TabIndex = 0;
@@ -53,7 +52,7 @@ namespace bibliotecaForm.Formularios
             // 
             // btnListarLibros
             // 
-            btnListarLibros.Location = new Point(621, 195);
+            btnListarLibros.Location = new Point(619, 173);
             btnListarLibros.Name = "btnListarLibros";
             btnListarLibros.Size = new Size(75, 46);
             btnListarLibros.TabIndex = 2;
@@ -61,29 +60,9 @@ namespace bibliotecaForm.Formularios
             btnListarLibros.UseVisualStyleBackColor = true;
             btnListarLibros.Click += btnListarLibros_Click;
             // 
-            // btnAgregarLibro
-            // 
-            btnAgregarLibro.Location = new Point(163, 288);
-            btnAgregarLibro.Name = "btnAgregarLibro";
-            btnAgregarLibro.Size = new Size(75, 46);
-            btnAgregarLibro.TabIndex = 4;
-            btnAgregarLibro.Text = "AGREGAR LIBRO";
-            btnAgregarLibro.UseVisualStyleBackColor = true;
-            btnAgregarLibro.Click += btnAgregarLibro_Click;
-            // 
-            // btnPrestarLibro
-            // 
-            btnPrestarLibro.Location = new Point(264, 288);
-            btnPrestarLibro.Name = "btnPrestarLibro";
-            btnPrestarLibro.Size = new Size(75, 46);
-            btnPrestarLibro.TabIndex = 6;
-            btnPrestarLibro.Text = "PRESTAR LIBRO";
-            btnPrestarLibro.UseVisualStyleBackColor = true;
-            btnPrestarLibro.Click += btnPrestarLibro_Click;
-            // 
             // btnAltaLector
             // 
-            btnAltaLector.Location = new Point(368, 288);
+            btnAltaLector.Location = new Point(419, 294);
             btnAltaLector.Name = "btnAltaLector";
             btnAltaLector.Size = new Size(75, 46);
             btnAltaLector.TabIndex = 8;
@@ -113,13 +92,23 @@ namespace bibliotecaForm.Formularios
             // 
             // btnVerPrestamos
             // 
-            btnVerPrestamos.Location = new Point(466, 288);
+            btnVerPrestamos.Location = new Point(619, 235);
             btnVerPrestamos.Name = "btnVerPrestamos";
-            btnVerPrestamos.Size = new Size(83, 46);
+            btnVerPrestamos.Size = new Size(75, 56);
             btnVerPrestamos.TabIndex = 11;
             btnVerPrestamos.Text = "VER LIBROS PRESTADOS";
             btnVerPrestamos.UseVisualStyleBackColor = true;
             btnVerPrestamos.Click += btnVerPrestamos_Click;
+            // 
+            // btnPrestarLibro
+            // 
+            btnPrestarLibro.Location = new Point(315, 294);
+            btnPrestarLibro.Name = "btnPrestarLibro";
+            btnPrestarLibro.Size = new Size(75, 46);
+            btnPrestarLibro.TabIndex = 6;
+            btnPrestarLibro.Text = "PRESTAR LIBRO";
+            btnPrestarLibro.UseVisualStyleBackColor = true;
+            btnPrestarLibro.Click += btnPrestarLibro_Click;
             // 
             // formPrincipal
             // 
@@ -131,7 +120,6 @@ namespace bibliotecaForm.Formularios
             Controls.Add(listBox1);
             Controls.Add(btnAltaLector);
             Controls.Add(btnPrestarLibro);
-            Controls.Add(btnAgregarLibro);
             Controls.Add(btnListarLibros);
             Controls.Add(btnListarLectores);
             Name = "formPrincipal";
@@ -145,11 +133,10 @@ namespace bibliotecaForm.Formularios
 
         private Button btnListarLectores;
         private Button btnListarLibros;
-        private Button btnAgregarLibro;
-        private Button btnPrestarLibro;
         private Button btnAltaLector;
         private ListBox listBox1;
         private Label lblTipoLista;
         private Button btnVerPrestamos;
+        private Button btnPrestarLibro;
     }
 }
