@@ -1,6 +1,6 @@
 ﻿namespace bibliotecaForm.Formularios
 {
-    partial class FormPrestarLibro
+    partial class FormPrestamos
     {
         /// <summary>
         /// Required designer variable.
@@ -53,7 +53,7 @@
             listLectores.FormattingEnabled = true;
             listLectores.HorizontalScrollbar = true;
             listLectores.ItemHeight = 15;
-            listLectores.Location = new Point(46, 63);
+            listLectores.Location = new Point(12, 28);
             listLectores.Name = "listLectores";
             listLectores.Size = new Size(312, 94);
             listLectores.TabIndex = 0;
@@ -64,7 +64,7 @@
             listLibros.FormattingEnabled = true;
             listLibros.HorizontalScrollbar = true;
             listLibros.ItemHeight = 15;
-            listLibros.Location = new Point(46, 211);
+            listLibros.Location = new Point(12, 176);
             listLibros.Name = "listLibros";
             listLibros.RightToLeft = RightToLeft.No;
             listLibros.Size = new Size(312, 94);
@@ -73,7 +73,7 @@
             // 
             // txtDni
             // 
-            txtDni.Location = new Point(506, 103);
+            txtDni.Location = new Point(472, 68);
             txtDni.Multiline = true;
             txtDni.Name = "txtDni";
             txtDni.ReadOnly = true;
@@ -82,7 +82,7 @@
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(375, 103);
+            txtNombre.Location = new Point(341, 68);
             txtNombre.Multiline = true;
             txtNombre.Name = "txtNombre";
             txtNombre.ReadOnly = true;
@@ -91,7 +91,7 @@
             // 
             // txtCantidadPrestamos
             // 
-            txtCantidadPrestamos.Location = new Point(634, 103);
+            txtCantidadPrestamos.Location = new Point(600, 68);
             txtCantidadPrestamos.Multiline = true;
             txtCantidadPrestamos.Name = "txtCantidadPrestamos";
             txtCantidadPrestamos.ReadOnly = true;
@@ -102,36 +102,40 @@
             // lblLectores
             // 
             lblLectores.AutoSize = true;
-            lblLectores.Location = new Point(46, 45);
+            lblLectores.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblLectores.Location = new Point(12, 10);
             lblLectores.Name = "lblLectores";
-            lblLectores.Size = new Size(118, 15);
+            lblLectores.Size = new Size(120, 15);
             lblLectores.TabIndex = 5;
             lblLectores.Text = "SELECCIONE LECTOR";
             // 
             // lblCantLibrosPrestados
             // 
             lblCantLibrosPrestados.AutoSize = true;
-            lblCantLibrosPrestados.Location = new Point(634, 85);
+            lblCantLibrosPrestados.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblCantLibrosPrestados.Location = new Point(600, 50);
             lblCantLibrosPrestados.Name = "lblCantLibrosPrestados";
-            lblCantLibrosPrestados.Size = new Size(79, 15);
+            lblCantLibrosPrestados.Size = new Size(82, 15);
             lblCantLibrosPrestados.TabIndex = 6;
             lblCantLibrosPrestados.Text = "N° Prestamos";
             // 
             // lblEdadLector
             // 
             lblEdadLector.AutoSize = true;
-            lblEdadLector.Location = new Point(506, 85);
+            lblEdadLector.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblEdadLector.Location = new Point(472, 50);
             lblEdadLector.Name = "lblEdadLector";
-            lblEdadLector.Size = new Size(27, 15);
+            lblEdadLector.Size = new Size(29, 15);
             lblEdadLector.TabIndex = 7;
             lblEdadLector.Text = "DNI";
             // 
             // lblNombreLector
             // 
             lblNombreLector.AutoSize = true;
-            lblNombreLector.Location = new Point(375, 85);
+            lblNombreLector.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblNombreLector.Location = new Point(341, 50);
             lblNombreLector.Name = "lblNombreLector";
-            lblNombreLector.Size = new Size(51, 15);
+            lblNombreLector.Size = new Size(53, 15);
             lblNombreLector.TabIndex = 8;
             lblNombreLector.Text = "Nombre";
             lblNombreLector.Click += label4_Click;
@@ -139,42 +143,46 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(375, 233);
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label1.Location = new Point(341, 198);
             label1.Name = "label1";
-            label1.Size = new Size(37, 15);
+            label1.Size = new Size(39, 15);
             label1.TabIndex = 15;
             label1.Text = "Titulo";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(506, 233);
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label2.Location = new Point(472, 198);
             label2.Name = "label2";
-            label2.Size = new Size(37, 15);
+            label2.Size = new Size(39, 15);
             label2.TabIndex = 14;
             label2.Text = "Autor";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(634, 233);
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label3.Location = new Point(600, 198);
             label3.Name = "label3";
-            label3.Size = new Size(50, 15);
+            label3.Size = new Size(52, 15);
             label3.TabIndex = 13;
             label3.Text = "Editorial";
             // 
             // lblLibros
             // 
             lblLibros.AutoSize = true;
-            lblLibros.Location = new Point(46, 193);
+            lblLibros.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblLibros.Location = new Point(12, 158);
             lblLibros.Name = "lblLibros";
-            lblLibros.Size = new Size(109, 15);
+            lblLibros.Size = new Size(112, 15);
             lblLibros.TabIndex = 12;
             lblLibros.Text = "SELECCIONE LIBRO";
             // 
             // txtEditorial
             // 
-            txtEditorial.Location = new Point(634, 251);
+            txtEditorial.Location = new Point(600, 216);
             txtEditorial.Multiline = true;
             txtEditorial.Name = "txtEditorial";
             txtEditorial.ReadOnly = true;
@@ -183,7 +191,7 @@
             // 
             // txtTitulo
             // 
-            txtTitulo.Location = new Point(375, 251);
+            txtTitulo.Location = new Point(341, 216);
             txtTitulo.Multiline = true;
             txtTitulo.Name = "txtTitulo";
             txtTitulo.ReadOnly = true;
@@ -192,7 +200,7 @@
             // 
             // txtAutor
             // 
-            txtAutor.Location = new Point(506, 251);
+            txtAutor.Location = new Point(472, 216);
             txtAutor.Multiline = true;
             txtAutor.Name = "txtAutor";
             txtAutor.ReadOnly = true;
@@ -201,8 +209,8 @@
             // 
             // btnPrestar
             // 
-            btnPrestar.Font = new Font("Segoe UI", 20F);
-            btnPrestar.Location = new Point(176, 353);
+            btnPrestar.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold);
+            btnPrestar.Location = new Point(142, 318);
             btnPrestar.Name = "btnPrestar";
             btnPrestar.Size = new Size(170, 60);
             btnPrestar.TabIndex = 16;
@@ -212,8 +220,8 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Font = new Font("Segoe UI", 20F);
-            btnCancelar.Location = new Point(425, 353);
+            btnCancelar.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold);
+            btnCancelar.Location = new Point(391, 318);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(169, 60);
             btnCancelar.TabIndex = 17;
@@ -221,11 +229,12 @@
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Click += btnCancelar_Click;
             // 
-            // FormPrestarLibro
+            // FormPrestamos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.FromArgb(245, 246, 250);
+            ClientSize = new Size(802, 463);
             Controls.Add(btnCancelar);
             Controls.Add(btnPrestar);
             Controls.Add(label1);
@@ -244,7 +253,7 @@
             Controls.Add(txtDni);
             Controls.Add(listLibros);
             Controls.Add(listLectores);
-            Name = "FormPrestarLibro";
+            Name = "FormPrestamos";
             Text = "FormPrestarLibro";
             Load += FormPrestarLibro_Load;
             ResumeLayout(false);

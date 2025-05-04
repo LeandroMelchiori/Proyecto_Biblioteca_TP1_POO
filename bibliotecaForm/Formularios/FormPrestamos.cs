@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace bibliotecaForm.Formularios
 {
-    public partial class FormPrestarLibro : Form
+    public partial class FormPrestamos : Form
     {
         private Biblioteca biblioteca;
-        public FormPrestarLibro(Biblioteca biblioteca)
+        public FormPrestamos(Biblioteca biblioteca)
         {
             InitializeComponent();
             // cargamos la biblioteca

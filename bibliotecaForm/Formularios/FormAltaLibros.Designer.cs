@@ -1,6 +1,6 @@
 ﻿namespace bibliotecaForm.Formularios
 {
-    partial class FormAgregarLibro
+    partial class FormAltaLibros
     {
         /// <summary>
         /// Required designer variable.
@@ -32,17 +32,16 @@
             txtEditorial = new TextBox();
             txtAutor = new TextBox();
             btnAgregar = new Button();
-            btnCancelar = new Button();
-            btnAltaLector = new Button();
+            lblLibros = new Label();
             SuspendLayout();
             // 
             // txtTitulo
             // 
             txtTitulo.Font = new Font("Segoe UI", 15F);
-            txtTitulo.Location = new Point(132, 114);
+            txtTitulo.Location = new Point(12, 27);
             txtTitulo.Multiline = true;
             txtTitulo.Name = "txtTitulo";
-            txtTitulo.Size = new Size(309, 57);
+            txtTitulo.Size = new Size(221, 57);
             txtTitulo.TabIndex = 0;
             txtTitulo.Text = "Titulo";
             txtTitulo.Enter += txtTitulo_Enter;
@@ -51,10 +50,10 @@
             // txtEditorial
             // 
             txtEditorial.Font = new Font("Segoe UI", 15F);
-            txtEditorial.Location = new Point(132, 277);
+            txtEditorial.Location = new Point(12, 179);
             txtEditorial.Multiline = true;
             txtEditorial.Name = "txtEditorial";
-            txtEditorial.Size = new Size(309, 57);
+            txtEditorial.Size = new Size(221, 57);
             txtEditorial.TabIndex = 1;
             txtEditorial.Text = "Editorial";
             txtEditorial.Enter += txtEditorial_Enter;
@@ -63,10 +62,10 @@
             // txtAutor
             // 
             txtAutor.Font = new Font("Segoe UI", 15F);
-            txtAutor.Location = new Point(132, 193);
+            txtAutor.Location = new Point(12, 106);
             txtAutor.Multiline = true;
             txtAutor.Name = "txtAutor";
-            txtAutor.Size = new Size(309, 57);
+            txtAutor.Size = new Size(221, 57);
             txtAutor.TabIndex = 2;
             txtAutor.Text = "Autor";
             txtAutor.TextChanged += txtAutor_TextChanged;
@@ -75,48 +74,37 @@
             // 
             // btnAgregar
             // 
-            btnAgregar.Font = new Font("Segoe UI", 15F);
-            btnAgregar.Location = new Point(515, 139);
+            btnAgregar.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAgregar.Location = new Point(12, 254);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(119, 62);
+            btnAgregar.Size = new Size(221, 46);
             btnAgregar.TabIndex = 3;
             btnAgregar.Text = "AGREGAR";
             btnAgregar.UseVisualStyleBackColor = true;
             btnAgregar.Click += btnAgregar_Click;
             // 
-            // btnCancelar
+            // lblLibros
             // 
-            btnCancelar.Font = new Font("Segoe UI", 15F);
-            btnCancelar.Location = new Point(515, 238);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(119, 62);
-            btnCancelar.TabIndex = 4;
-            btnCancelar.Text = "CANCELAR";
-            btnCancelar.UseVisualStyleBackColor = true;
-            btnCancelar.Click += btnCancelar_Click;
+            lblLibros.AutoSize = true;
+            lblLibros.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblLibros.Location = new Point(12, 9);
+            lblLibros.Name = "lblLibros";
+            lblLibros.Size = new Size(97, 15);
+            lblLibros.TabIndex = 10;
+            lblLibros.Text = "ALTA DE LIBROS";
             // 
-            // btnAltaLector
-            // 
-            btnAltaLector.Location = new Point(533, 340);
-            btnAltaLector.Name = "btnAltaLector";
-            btnAltaLector.Size = new Size(75, 46);
-            btnAltaLector.TabIndex = 9;
-            btnAltaLector.Text = "ALTA LECTOR";
-            btnAltaLector.UseVisualStyleBackColor = true;
-            btnAltaLector.Click += btnAltaLector_Click;
-            // 
-            // FormAgregarLibro
+            // FormAltaLibros
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(btnAltaLector);
-            Controls.Add(btnCancelar);
+            BackColor = Color.FromArgb(245, 246, 250);
+            ClientSize = new Size(380, 350);
+            Controls.Add(lblLibros);
             Controls.Add(btnAgregar);
             Controls.Add(txtAutor);
             Controls.Add(txtEditorial);
             Controls.Add(txtTitulo);
-            Name = "FormAgregarLibro";
+            Name = "FormAltaLibros";
             Text = "FormAgregarLibro";
             Load += FormAgregarLibro_Load;
             ResumeLayout(false);
@@ -129,7 +117,6 @@
         private TextBox txtEditorial;
         private TextBox txtAutor;
         private Button btnAgregar;
-        private Button btnCancelar;
-        private Button btnAltaLector;
+        private Label lblLibros;
     }
 }
